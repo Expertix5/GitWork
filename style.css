@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    /* background:linear-gradient(90deg, rgba(2,0,36,0.5) 0%, rgba(0,0,0,0.5) 100%), url(aj-robbie-BuQ1RZckYW4-unsplash.jpg); */
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+    position: relative;
+}
+
+header ul li {
+    list-style: none;
+    margin-right: 38px;
+
+cursor: pointer;
+
+}
+
+header ul {
+    display: flex;
+
+}
+
+.container {
+    padding: 25px 10%;
+
+}
+
+.text-content {
+    position: relative;
+    top: 28vh;
+    color: white;
+}
+
+.text-content h2 {
+    font-size: 58px;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 20px;
+    width: 45%;
+}
+
+.video::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-image: radial-gradient(
+      circle at 36% 48%,
+      #000000,
+      rgba(11, 39, 65, 0.32) 87%,
+      rgba(0, 0, 0, 0)
+    );
+  }
